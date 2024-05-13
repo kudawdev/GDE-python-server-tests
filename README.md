@@ -45,7 +45,7 @@ La prueba busca demostrar el uso de Asyncio Semaphore e involucra la interacció
 
 3. **task_handler**: Este script contiene la lógica para el manejo de las solicitudes. Utiliza un semáforo (`asyncio.Semaphore`) para limitar la cantidad de solicitudes que pueden ser procesadas simultáneamente. Cuando llega una solicitud, la función `handle_request` adquiere este semáforo, espera el número especificado de segundos y luego libera el semáforo.
 
-### Ayncio
+### Asyncio
 Esta prueba busca demostrar el uso de asyncio, además de hacer pruebas de estrés al servidor WebSocket, utilizando `asyncio` y `websockets` en Python para manejar múltiples conexiones y ejecutar tareas de manera asíncrona.
 
 1. **ws_server**: Este script corre un servidor WebSocket que escucha mensajes de los clientes. Cuando se recibe un mensaje, se pasa a un "manejador de tareas" (`task_handler`) para su procesamiento. También maneja desconexiones del cliente y otras excepciones.
